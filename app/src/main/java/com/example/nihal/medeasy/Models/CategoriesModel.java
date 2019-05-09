@@ -7,6 +7,7 @@ public class CategoriesModel {
     public CategoriesModel(String categoryName, String checkBox) {
         this.categoryName = categoryName;
         this.checkBox = checkBox;
+
     }
 
     public String getCategoryName() {

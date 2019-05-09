@@ -39,7 +39,7 @@ public class SecondActivity extends AppCompatActivity {
 
    for(int i=0;i<drugname.length;i++){
 
-       Drugs drugs1 = new Drugs(drugname[i],drugdose[i],drugperday[i],drugduration[i]);
+       Drugs drugs1 = new Drugs(drugname[i],drugdose[i],drugperday[i],drugduration[i],drugduration[i]);
 
        drugs.add(drugs1);
 

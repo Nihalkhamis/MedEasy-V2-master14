@@ -866,6 +866,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="next"
+                    android:id="@+id/save"
                     android:textColor="@color/colorButton" />
 
             </LinearLayout>

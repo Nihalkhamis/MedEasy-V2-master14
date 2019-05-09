@@ -2,19 +2,17 @@ package com.example.nihal.medeasy.Models;
 
 public class AssessmentSheetModel {
 
-    private String yourComplaint , pastHistory , presentHistory ;
+    private String yourComplaint , pastHistory  ;
     private String DM;
     private String Smoker;
     private String Hypertension ;
     private String Dysliplidemia ;
     private String GeneralLook;
-
     private String level_of_consclousness;
     private String pulse_rate;
     private String pulse_rhythm;
     private String pulse_equality;
     private String peripheral_pulsation;
-    private String peripheral_pulsation_notfelt;
     private String vital_signs_bp_right;
     private String vital_signs_bp_left;
     private String vital_signs_temp;
@@ -26,10 +24,13 @@ public class AssessmentSheetModel {
     private String ll_oedema_2;
     private String ll_oedema_3;
 
+    public AssessmentSheetModel(String yourComplaint) {
+        this.yourComplaint = yourComplaint;
+    }
+
     public AssessmentSheetModel(String yourComplaint, String pastHistory, String presentHistory, String DM, String smoker, String hypertension, String dysliplidemia, String generalLook, String level_of_consclousness, String pulse_rate, String pulse_rhythm, String pulse_equality, String peripheral_pulsation, String peripheral_pulsation_notfelt, String vital_signs_bp_right, String vital_signs_bp_left, String vital_signs_temp, String vital_signs_rr, String vital_signs_o2_saturation, String chest_pain, String head_and_neck_neck, String ll_oedema_1, String ll_oedema_2, String ll_oedema_3) {
         this.yourComplaint = yourComplaint;
         this.pastHistory = pastHistory;
-        this.presentHistory = presentHistory;
         this.DM = DM;
         Smoker = smoker;
         Hypertension = hypertension;
@@ -40,7 +41,6 @@ public class AssessmentSheetModel {
         this.pulse_rhythm = pulse_rhythm;
         this.pulse_equality = pulse_equality;
         this.peripheral_pulsation = peripheral_pulsation;
-        this.peripheral_pulsation_notfelt = peripheral_pulsation_notfelt;
         this.vital_signs_bp_right = vital_signs_bp_right;
         this.vital_signs_bp_left = vital_signs_bp_left;
         this.vital_signs_temp = vital_signs_temp;
@@ -61,9 +61,6 @@ public class AssessmentSheetModel {
         return pastHistory;
     }
 
-    public String getPresentHistory() {
-        return presentHistory;
-    }
 
     public String getDM() {
         return DM;
@@ -105,9 +102,6 @@ public class AssessmentSheetModel {
         return peripheral_pulsation;
     }
 
-    public String getPeripheral_pulsation_notfelt() {
-        return peripheral_pulsation_notfelt;
-    }
 
     public String getVital_signs_bp_right() {
         return vital_signs_bp_right;
@@ -158,9 +152,6 @@ public class AssessmentSheetModel {
         this.pastHistory = pastHistory;
     }
 
-    public void setPresentHistory(String presentHistory) {
-        this.presentHistory = presentHistory;
-    }
 
     public void setDM(String DM) {
         this.DM = DM;
@@ -200,10 +191,6 @@ public class AssessmentSheetModel {
 
     public void setPeripheral_pulsation(String peripheral_pulsation) {
         this.peripheral_pulsation = peripheral_pulsation;
-    }
-
-    public void setPeripheral_pulsation_notfelt(String peripheral_pulsation_notfelt) {
-        this.peripheral_pulsation_notfelt = peripheral_pulsation_notfelt;
     }
 
     public void setVital_signs_bp_right(String vital_signs_bp_right) {

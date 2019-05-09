@@ -24,10 +24,12 @@ public class DoctorHome extends AppCompatActivity {
         setContentView(R.layout.activity_doctor_home);
         docModel=new ArrayList<>();
         recyclerView=findViewById(R.id.recyclerView);
-        docModel.add(new DoctorHomeModel(R.drawable.doctor_medical_history,"Medical History"));
-        docModel.add(new DoctorHomeModel(R.drawable.doctor_medical_history,"Medicine"));
-        docModel.add(new DoctorHomeModel(R.drawable.doctor_medical_history,"Analysis"));
-        docModel.add(new DoctorHomeModel(R.drawable.doctor_medical_history,"Profile"));
+//        docModel.add(new DoctorHomeModel(R.drawable.doctor_medical_history,"Medical History"));
+//        docModel.add(new DoctorHomeModel(R.drawable.doctor_medical_history,"Medicine"));
+//        docModel.add(new DoctorHomeModel(R.drawable.doctor_medical_history,"Analysis"));
+//        docModel.add(new DoctorHomeModel(R.drawable.doctor_medical_history,"Profile"));
+//        docModel.add(new DoctorHomeModel(R.drawable.doctor_medical_history,"Surgeries"));
+//        docModel.add(new DoctorHomeModel(R.drawable.doctor_medical_history,"Medical Prescriptions"));
         doctorAdapter = new DoctorAdapter(docModel, this, new DoctorAdapter.OnItemClick() {
             @Override
             public void setOnItemClick(int position) {

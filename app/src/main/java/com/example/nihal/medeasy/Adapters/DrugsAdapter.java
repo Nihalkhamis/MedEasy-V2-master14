@@ -42,10 +42,10 @@ public class DrugsAdapter extends RecyclerView.Adapter<DrugsAdapter.DrugsHolder>
 
 
         Drugs model = DrugslList.get(i);
-        viewHolder.drugdose.setText(model.getdose());
-        viewHolder.drugduration.setText(model.getduration());
-        viewHolder.drugname.setText(model.getname());
-        viewHolder.drugperd.setText(model.gettperd());
+        viewHolder.drugdose.setText(model.getDose());
+        viewHolder.drugduration.setText(model.getFrom()+" to "+model.getTo());
+        viewHolder.drugname.setText(model.getName());
+        viewHolder.drugperd.setText(model.getTperd());
 
     }
 

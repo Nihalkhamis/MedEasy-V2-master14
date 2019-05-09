@@ -19,31 +19,32 @@
 
         <receiver android:name=".BroadCast.AlarmService" />
 
-        <activity android:name=".AssessmentSheetsActivity" />
+        <activity android:name=".AssessmentSheetsActivity"></activity>
         <activity android:name=".LabResultsAvtivity" />
+        <activity android:name=".AssessmentSheet2" />
         <activity android:name=".AlarmActivity" />
         <activity
             android:name=".LoginActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity android:name=".SignupActivity" />
         <activity
             android:name=".AssessmentSheet"
-            android:windowSoftInputMode="stateAlwaysHidden" />
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+        </activity>
         <activity
             android:name=".SecondActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".DoctorLogin"></activity>
-        <activity android:name=".startingPage">
-
-        </activity>
-        <activity android:name=".DoctorHome">
-
+        <activity android:name=".DoctorLogin" />
+        <activity android:name=".startingPage" />
+        <activity android:name=".DoctorHome"></activity>
+        <activity android:name=".DoctorSignUp"></activity>
+        <activity android:name=".DocSectionMedince">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 

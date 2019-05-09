@@ -122,4 +122,13 @@
     <!-- home Activity Bottom nav -->
     <string name="medicalHistory">Medical History</string>
 
+
+    <!--*****************************************************************************************-->
+    <!-- Doctor Medicine Section -->
+    <string name="AddMedinice">Add Medicine</string>
+    <string name="BarDay">Bar Day</string>
+    <string name="Dose"> Dose</string>
+    <string name="StartTime"> Start Time</string>
+    <string name="EndTime"> End Time</string>
+
 </resources>
