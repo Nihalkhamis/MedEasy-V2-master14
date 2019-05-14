@@ -10,6 +10,7 @@ import android.widget.Toast;
 import com.example.nihal.medeasy.Adapters.CategoriesAdapter;
 import com.example.nihal.medeasy.Adapters.DoctorAdapter;
 import com.example.nihal.medeasy.Models.DoctorHomeModel;
+import com.orhanobut.hawk.Hawk;
 
 import java.util.ArrayList;
 
@@ -45,6 +46,15 @@ public class DoctorHome extends AppCompatActivity {
         });
         recyclerView.setLayoutManager(new GridLayoutManager(this,2));
         recyclerView.setAdapter(doctorAdapter);
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if(Hawk.contains("Key")) {
+            Hawk.delete("Key");
+        }
 
     }
 }

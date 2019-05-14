@@ -86,10 +86,27 @@
         android:background="@drawable/button_shap"
         android:text="@string/AddMedinice"
         android:textColor="@android:color/white" />
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:id="@+id/RV"></android.support.v7.widget.RecyclerView>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/RV"
+            android:paddingBottom="70dp"></android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/commit"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_shap"
+            android:text="@string/Commit"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
 </LinearLayout>

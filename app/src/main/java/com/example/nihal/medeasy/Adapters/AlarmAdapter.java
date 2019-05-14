@@ -19,7 +19,7 @@ public class AlarmAdapter extends RecyclerView.Adapter<AlarmAdapter.ViewHolder> 
     private AlarmAdapter.OnItemClick mOnItemClick;
     private Context context;
 
-    public AlarmAdapter(ArrayList<AlarmModel> alarmModels , Context context, AlarmAdapter.OnItemClick mOnItemClick) {
+    public AlarmAdapter(ArrayList<AlarmModel> alarmModels, Context context, AlarmAdapter.OnItemClick mOnItemClick) {
         this.alarmModels = alarmModels;
         this.mOnItemClick = mOnItemClick;
         this.context = context;

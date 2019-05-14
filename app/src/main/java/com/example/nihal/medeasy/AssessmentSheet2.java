@@ -152,11 +152,22 @@ public class AssessmentSheet2 extends AppCompatActivity {
 
     public void writeOnDataBase(AssessmentSheetModel model) {
         database1 = FirebaseDatabase.getInstance();
-
+        String key;
         myRef1 = database1.getReference("Users").child("1UbTozyso3SR8ZY7y0O6mZxTVqd2").child("Roshetat");
-        String mGroupId = myRef1.push().getKey();
+        if(Hawk.contains("Key")){
 
-        myRef1.child(mGroupId).child("Rosheta").child("Genaral").setValue(model);
-        Log.d("TTTT", "writeOnDataBase: " + mGroupId);
+
+
+            key=Hawk.get("Key");
+
+
+
+        }else {
+             key = myRef1.push().getKey();
+            Hawk.put("Key",key);
+        }
+
+        myRef1.child(key).child("Rosheta").child("Genaral").setValue(model);
+        //Log.d("TTTT", "writeOnDataBase: " + key);
     }
 }
